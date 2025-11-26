@@ -10,7 +10,7 @@ module.exports = class GameSenseManager {
     this.app_name = "ARCTIS_BATTERY";
     this.percent_event_name = "DISPLAY_HEADSET_PERCENT";
 
-    // Initialize SSE connection (same as your code)
+    // Initialize SSE connection
     const corePropsFilename =
       "%PROGRAMDATA%/SteelSeries/SteelSeries Engine 3/coreProps.json";
     const absoluteCorePropsFilename = corePropsFilename.replace(
