@@ -43,7 +43,7 @@ try {
     myGameSenseManager.onExit();
   });
 
-  console.log("Nova 7 connected:", myHeadset.headsetName);
+  console.log("Headset connected:", myHeadset.headsetName);
 } catch (err) {
   console.error("Initialization failed:", err);
   process.exit(1);
@@ -55,6 +55,7 @@ setInterval(function () {
     const battery_percent = myHeadset.getBatteryPercentage();
     const charging_status = myHeadset.getChargingStatus();
     myGameSenseManager.displayBatteryPercentage(
+      myHeadset.headsetName,
       battery_percent,
       charging_status
     );

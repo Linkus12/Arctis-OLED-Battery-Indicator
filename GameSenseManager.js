@@ -47,7 +47,7 @@ module.exports = class GameSenseManager {
   }
 
   // --- Render a 128x40 monochrome image with battery info ---
-  async renderBatteryOLED(headsetName, statusText, batteryText, percent) {
+  async renderBatteryOLED(headsetName = "Nova 7", statusText, batteryText, percent) {
     const width = 128;
     const height = 40;
     const img = PImage.make(width, height);
@@ -63,8 +63,12 @@ module.exports = class GameSenseManager {
       ctx.fillStyle = "black";
       ctx.fillRect(0,0, width, height);
       ctx.fillStyle = "white";
-      ctx.font = "12pt SilkRegular"; // bigger than normal
-      const text = "Nova 7 - Offline";
+      // console.log(headsetName)
+      const text = headsetName + " - Offline";
+      if (text.length <= 18)
+        ctx.font = "12pt SilkRegular"; // bigger than normal
+      else
+        ctx.font = "10pt SilkRegular"; // bigger than normal
       const textWidth = ctx.measureText(text).width;
       const x = Math.floor((width - textWidth) / 2);
       const y = Math.floor(height / 2 + 6); // vertical center
@@ -79,7 +83,7 @@ module.exports = class GameSenseManager {
 
       // Draw headset and status text
       // ctx.fillText(`${headsetName} - ${statusText}`, 0, 10);
-      ctx.fillText(`Nova 7 - ${statusText}`, 0, 10);
+      ctx.fillText(`${headsetName} - ${statusText}`, 0, 10);
       ctx.fillText(batteryText, 0, 20);
 
       // Draw progress bar
@@ -123,7 +127,7 @@ module.exports = class GameSenseManager {
   }
 
   // --- Send battery percentage to OLED ---
-  async displayBatteryPercentage(percent, chargingStatus = null) {
+  async displayBatteryPercentage(headsetName, percent, chargingStatus = null) {
     const statusText =
       percent === null
         ? "Online"
@@ -136,7 +140,7 @@ module.exports = class GameSenseManager {
     const batteryText = percent === null ? "" : `Battery: ${percent}%`;
 
     const imageData = await this.renderBatteryOLED(
-      this.headsetName,
+      headsetName,
       statusText,
       batteryText,
       percent ?? 0
