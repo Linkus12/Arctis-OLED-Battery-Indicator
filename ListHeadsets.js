@@ -1,18 +1,30 @@
 const HID = require('node-hid');
 HID.setDriverType('libusb');
 
-const NOVA7_VENDOR_ID = 0x1038;
-const NOVA7_PRODUCT_ID = 0x2202;
+//USB\VID_1038&PID_2212&MI_00
+//headset list
+// const NOVA7_VENDOR_ID = 0x1038;
+// const NOVA7_PRODUCT_ID = 0x2212;
+const headSets = require('./listOfHeadsets.js');
 
+
+
+//const NOVA7_VENDOR_ID = 0x1038;
+//const NOVA7_PRODUCT_ID = 0x2202;
 // The “magic byte” to request battery info
 const BATTERY_MAGIC = 0xb0;
+
+
 
 module.exports = {
     getConnectedHeadset: () => {
         const devices = HID.devices().filter(d =>
-            d.vendorId === NOVA7_VENDOR_ID &&
-            d.productId === NOVA7_PRODUCT_ID
+        headSets.some(h =>
+            d.vendorId === h.NOVA7_VENDOR_ID &&
+            d.productId === h.NOVA7_PRODUCT_ID
+        )
         );
+
 
         if (!devices.length) throw new Error('No Arctis Nova 7 devices found!');
 

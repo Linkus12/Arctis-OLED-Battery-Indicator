@@ -1,0 +1,86 @@
+11/30/2025 00:39:19 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:18 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:17 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:16 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:15 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:14 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:13 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:12 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:11 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:10 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:09 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:08 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:07 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:06 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:05 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:04 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:03 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:02 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:01 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:39:00 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:59 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:58 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:57 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:56 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:55 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:54 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:53 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:52 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:51 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:50 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:49 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:48 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:47 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:46 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:45 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:44 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:43 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:42 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:41 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:40 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:39 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:38 - TypeError: Cannot write to hid device
+##########
+11/30/2025 00:38:37 - TypeError: Cannot write to hid device
+##########
